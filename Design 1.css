@@ -1,0 +1,194 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
+            
+        }
+        body {
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: transparent;
+        }
+
+        .Homep {
+            width: 90%;
+            max-width: 1920px;
+            height: 100vh; 
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Imag {
+            width: 100%;
+            height: 50vh;
+            background-image: url('Saitama.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          
+            display: flex;
+            gap: 10px;
+            
+            font-size: 20px;
+        }
+
+        .Imag a {
+            color: silver;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .Imag a:hover {
+            color: white; /* Change color on hover */
+            text-decoration: dashed; 
+        }
+        .Con1 {
+            width: 100%;
+            height: 50vh; /* Take the remaining half */
+            background-color:black;
+            padding: 100px;
+            align-items:  center;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        .BCat {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        .BCat input[type="button"] {
+            block-size: 65px;
+            inline-size: 170px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: blue;
+            color: rgb(242, 233, 233);  
+            transition: all 0.3s ease-in-out;
+        }
+        .Newb {
+            background-color: rgb(255, 255, 255) !important;
+            color: blue !important;         
+            
+            padding: 10px 20px;
+            font-size: 20px;
+            
+            transition: all 0.3s ease-in-out; /* Smooth transition */
+            border-radius: 5px;
+        }
+        
+        .Newb:hover {
+            background-color: blue !important;  
+            color: rgb(255, 255, 255) !important;
+        }
+        
+        .BCat input:hover {
+            block-size: 65px;
+            inline-size: 170px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            color: blue;  
+            transition: all 0.3s ease-in-out;
+        }
+        .Con1 p, .Con1 a{
+            margin: 0;
+        }
+        p {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        
+        }
+
+        .Con1 h1{
+            color: rgb(255, 255, 255);
+            font-size: 47px; 
+        }
+        .MarketP {
+            width: 90%;
+            max-width: 1920px;
+            height: 1500px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 10px; 
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+        }
+
+
+
+        .Market {
+            height: 500px;
+            border: 1px solid crimson;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            margin-top: 100px;
+        }
+
+        .MarkI {
+            width: 100%;
+            height: 50%;
+            overflow: hidden; /* Hides overflow content */
+            margin: 0 auto;
+            margin-bottom: 0;
+        }
+
+        .MarkI img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            
+        }
+        .MarkC{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(27, 14, 14);
+            margin-bottom: 0;
+            text-align: left;
+            padding-left: 10px;
+            padding-block: 10px;
+            font-size: small;
+            
+        }
+        
+        .MarkC p, .MarkC h1{
+            padding: 10px;
+            color: white;
+
+        }
+        .Price h2{
+            color: blue;
+            padding-left: 10px;
+            padding-top: 90px;  
+        }
+
+        @media (width: 500px) {
+            .MarketP {
+                grid-template-columns: repeat(2, 22%);
+                gap: 10px;
+            
+            }
+            
+        }
+
+
+        @media (min-width: 1300px) {
+            .MarketP {
+                grid-template-columns: repeat(4, 22%);
+                gap: 70px;
+            
+            }
+            
+        }
